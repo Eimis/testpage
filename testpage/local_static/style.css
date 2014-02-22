@@ -1,0 +1,120 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto Slab');
+@import url('http://fonts.googleapis.com/css?family=Lily Script One');
+@import url('http://fonts.googleapis.com/css?family=Droid Sans');
+
+
+body {
+background-image: url("/static/images/diamond_upholstery.png");
+overflow-y: scroll; /* jumping menu when scrollbar is present */
+  }
+
+#wrap {
+margin: 2% auto;
+width: 960px;
+/*background-color: red;*/
+
+}
+
+#content {
+width: 760px;
+border-top: 10px solid #d6e9e7;
+border-bottom: 10px solid #d6e9e7;
+margin-bottom: 20px;
+background-color: #F8F8FF;
+}
+
+#content p{
+font-family: "Droid Sans";
+font-size: 18px;
+margin: 10px;
+color: #a3a9aa;
+} 
+
+#menu p{
+font-family: "Droid Sans";
+font-size: 18px;
+margin: 10px;
+color: #a3a9aa;
+} 
+
+
+
+
+#content, #menu a:link{ 
+text-decoration: none;
+color: #a3a9aa;
+font-weight: bold;
+-webkit-transition-property:color, text;
+-webkit-transition-duration: 0.1s, 0.1s;
+-webkit-transition-timing-function: linear, ease-in;
+-moz-transition-property:color, text;
+-moz-transition-duration:0.1s;
+-moz-transition-timing-function: linear, ease-in;
+
+-o-transition-property:color, text;
+-o-transition-duration:0.1s;
+-o-transition-timing-function: linear, ease-in;
+}
+
+#content, #menu a:visited{ 
+text-decoration: none;
+color: #a3a9aa;
+font-weight: bold;
+-webkit-transition-property:color, text;
+-webkit-transition-duration: 0.1s, 0.1s;
+-webkit-transition-timing-function: linear, ease-in;
+-moz-transition-property:color, text;
+-moz-transition-duration:0.1s;
+-moz-transition-timing-function: linear, ease-in;
+
+-o-transition-property:color, text;
+-o-transition-duration:0.1s;
+-o-transition-timing-function: linear, ease-in;
+}
+
+#content, #menu a:active{ 
+text-decoration: none;
+color: #a3a9aa;
+font-weight: bold;
+-webkit-transition-property:color, text;
+-webkit-transition-duration: 0.1s, 0.1s;
+-webkit-transition-timing-function: linear, ease-in;
+-moz-transition-property:color, text;
+-moz-transition-duration:0.1s;
+-moz-transition-timing-function: linear, ease-in;
+
+-o-transition-property:color, text;
+-o-transition-duration:0.1s;
+-o-transition-timing-function: linear, ease-in;
+}
+
+
+
+#content, #menu a:hover{ 
+text-decoration: none;
+color: #85b6b3;
+}
+
+
+#pic {
+top:85px;
+background-color: transparent;
+width: 140px;
+text-align: center;
+align: center;
+margin: 2% auto;
+}
+
+#menu { 
+float: left;
+width: 200px;
+position: fixed;
+left: 30px;
+top: 225px;
+text-align: center;
+font-family: "Roboto Slab";
+background-color: #ffffff;
+padding: 5px;
+border: 1px #c6c6c6;
+text-align: left;
+}

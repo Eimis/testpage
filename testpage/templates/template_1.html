@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags%}
+
+{% block base_content %}
+  <div id="menu"><ul>
+    {% show_menu 0 100 100 100 %}
+</ul></div>
+  <div id="wrap">
+
+  	<div id="pic"><a href="/"><img src="{{ STATIC_URL }}images/ash.png"></img></a></div>
+
+  <div id="content" style="margin: 2% auto;">
+
+
+  	<p>{% placeholder template_1_content %}</p>
+
+  </div>
+
+</div>
+{% endblock %}

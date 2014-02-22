@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags %}
+
+{% block base_content %}
+  {% placeholder template_1_content %}
+  <ul>
+    {% show_menu 0 100 100 100 %}
+	</ul>
+	{% placeholder center_content %}
+{% endblock %}
+

@@ -1,0 +1,15 @@
+<!---git@heroku.com:sheltered-headland-6878.git !-->
+
+{% load cms_tags sekizai_tags %}
+<html>
+  <head>
+      {% render_block "css" %}
+      <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}style.css"/>
+  </head>
+  <body>
+      {% cms_toolbar %}
+      {% placeholder base_content %}
+      {% block base_content %}{% endblock %}
+      {% render_block "js" %}
+  </body>
+</html>
