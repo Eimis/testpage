@@ -1,4 +1,5 @@
 Django==1.5.1
+gunicorn==18.0
 django-classy-tags==0.4
 South==0.8.1
 html5lib==1.0b1
