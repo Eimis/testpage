@@ -1,6 +1,5 @@
 Django==1.5.1
-djangorestframework==2.3.12
-rest_framework==2.3.12
+djangorestframework
 http://effbot.org/media/downloads/Imaging-1.1.7.tar.gz
 django_cms==2.4.3
 gunicorn==18.0
