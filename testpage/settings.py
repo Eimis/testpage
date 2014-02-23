@@ -22,10 +22,17 @@ DATABASES = {
 }
 
 
+#EMAIL_USE_TLS = True
+#EMAIL_HOST = 'mail.idant.lt'
+#EMAIL_PORT = 587
+#EMAIL_HOST_USER = 'idant'
+#EMAIL_HOST_PASSWORD = 'maxmaxkit'
+
+
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.4/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -175,7 +182,23 @@ INSTALLED_APPS = (
     'cms.plugins.text',
     'cms.plugins.video',
     'cms.plugins.twitter',
+    'rest_framework',
+    "testpage"
 )
+
+
+REST_FRAMEWORK = {
+    # Use hyperlinked styles by default.
+    # Only used if the `serializer_class` attribute is not set on a view.
+    'DEFAULT_MODEL_SERIALIZER_CLASS':
+        'rest_framework.serializers.HyperlinkedModelSerializer',
+
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
+    'PAGINATE_BY': 10
+    
+}
 
 CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),
@@ -236,3 +259,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'local_static'),
 )
+
