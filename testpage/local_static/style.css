@@ -8,12 +8,24 @@ background-image: url("/static/images/diamond_upholstery.png");
 overflow-y: scroll; /* jumping menu when scrollbar is present */
   }
 
+html a:link, a:visited{
+	text-decoration: none;
+	color: #a3a9aa;
+}
+
+.filetitle{
+	color: #ff0000;
+	font-family: "Droid Sans";
+	font-size: 15px;
+}
+
 #wrap {
 margin: 2% auto;
 width: 960px;
 /*background-color: red;*/
 
 }
+
 
 #content {
 width: 760px;
@@ -37,10 +49,40 @@ margin: 10px;
 color: #a3a9aa;
 } 
 
+.filetitle a:link{
+	text-decoration: none;
+color: #a3a9aa;
+font-weight: bold;
+-webkit-transition-property:color, text;
+-webkit-transition-duration: 0.1s, 0.1s;
+-webkit-transition-timing-function: linear, ease-in;
+-moz-transition-property:color, text;
+-moz-transition-duration:0.1s;
+-moz-transition-timing-function: linear, ease-in;
+
+-o-transition-property:color, text;
+-o-transition-duration:0.1s;
+-o-transition-timing-function: linear, ease-in;
+}
+
+.filetitle a:visited{
+text-decoration: none;
+color: #a3a9aa;
+font-weight: bold;
+-webkit-transition-property:color, text;
+-webkit-transition-duration: 0.1s, 0.1s;
+-webkit-transition-timing-function: linear, ease-in;
+-moz-transition-property:color, text;
+-moz-transition-duration:0.1s;
+-moz-transition-timing-function: linear, ease-in;
+
+-o-transition-property:color, text;
+-o-transition-duration:0.1s;
+-o-transition-timing-function: linear, ease-in;
+}
 
 
-
-#content, #menu a:link{ 
+#content, #menu, #filetitle  a:link{ 
 text-decoration: none;
 color: #a3a9aa;
 font-weight: bold;
