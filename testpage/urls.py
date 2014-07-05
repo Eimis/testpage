@@ -30,7 +30,7 @@ urlpatterns = i18n_patterns('',
     url(r'api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     # redirects to static media files (css, javascript, images, etc.)
     url(r'^', include('cms.urls')),
-        (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': 'static/'}),
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': 'static/'}),
     # Wire up our API using automatic URL routing.
     # Additionally, we include login URLs for the browseable API.
 ) 

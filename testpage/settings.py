@@ -1,4 +1,9 @@
 import os
+import sys
+
+sys.path.append('/home/eimantas/Desktop/Projects/testpage/ENV/lib/python2.7/site-packages/cmsplugin-youtube')
+sys.path.append('/home/eimantas/Desktop/Projects/testpage')
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
@@ -22,12 +27,9 @@ DATABASES = {
 }
 
 
-#EMAIL_USE_TLS = True
-#EMAIL_HOST = 'mail.idant.lt'
-#EMAIL_PORT = 587
-#EMAIL_HOST_USER = 'idant'
-#EMAIL_HOST_PASSWORD = 'maxmaxkit'
 
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1026
 
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
@@ -183,7 +185,9 @@ INSTALLED_APPS = (
     'cms.plugins.video',
     'cms.plugins.twitter',
     'rest_framework',
-    "testpage"
+    'testpage',
+    'cmsplugin_contact',
+    'cmsplugin_youtube',
 )
 
 
@@ -204,6 +208,10 @@ CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),
     ('template_2.html', 'Template Two'),
 )
+
+DEFAULT_FROM_EMAIL = (
+    'eimantas.stonys@gmail.com'
+    )
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
